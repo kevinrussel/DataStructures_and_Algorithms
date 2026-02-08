@@ -10,13 +10,12 @@ def generate_random_array(size,low=0,high=1000):
 
 
 def first_test():
-    size_of_arr = [10]
+    size_of_arr = [10,5,5000,4,6,767,5,0]
+    big_array = []
     for key,value in enumerate(size_of_arr):
-        print(value)
         arr = generate_random_array(size=value)
-        arr.sort()
-        print(arr)
-
+        big_array.append(arr)
+    return big_array
 
 if __name__ == "__main__":
-    first_test()
+    first_unsorted_array = first_test()
